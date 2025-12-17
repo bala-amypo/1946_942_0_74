@@ -14,7 +14,7 @@ public class swaggerConfig {
         return new OpenAPI()
                 // You need to change the port as per your server
                 .servers(List.of(
-                        new Server().url("https://9008.pro604cr.amypo.ai/")
+                        new Server().url("https://9121.408procr.amypo.ai/")
                 ));
         }
 }
