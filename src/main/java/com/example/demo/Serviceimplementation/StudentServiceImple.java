@@ -10,10 +10,12 @@ import com.example.demo.Service.StudentService;
 
 @Service
 public class StudentServiceImplementation implements StudentService {
-     private final StudentRepository studentRepository;
-    public StudentServiceImplementation(StudentRepository studentRepository){
-        this.studentRepository=studentRepository;
-    }
+    //  private final StudentRepository studentRepository;
+    // public StudentServiceImplementation(StudentRepository studentRepository){
+    //     this.studentRepository=studentRepository;
+    // }
+    @Autowired
+    StudentRepository studentRepository;
    
      public Student saveStudent(Student student){
      return studentRepository.save(student);
