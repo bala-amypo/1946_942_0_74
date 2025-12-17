@@ -8,7 +8,10 @@ import com.example.demo.Service.StudentService;
 
 @Service
 public class StudentServiceImplementation implements StudentService {
+     private final StudentRepository studentRepository;
+    
+   
 
-     public Stuentity saveStudent(S)
-
+     public Stuentity saveStudent(Stuentity stuentity)
+     return
 }
