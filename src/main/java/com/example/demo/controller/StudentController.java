@@ -1,8 +1,8 @@
 package com.example.demo.controller;
 
-import org.springframework.web.
+importorg.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
-
 import com.example.demo.entity.Student;
 import com.example.demo.service.StudentService;
 
@@ -11,5 +11,8 @@ Public class StudentController {
     @Autowired
     StudentService studentService;
 
-    @PostMapping("/postda")
+    @PostMapping("/postdata")
+    public Student postdata(@RequestBody Student student){
+        return studentService.saveStudent(student);
+    }
 }
