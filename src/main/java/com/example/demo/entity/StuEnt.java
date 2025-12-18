@@ -60,4 +60,4 @@ public class StuEnt {
         this.cgpa = cgpa;
     }
 
-    
+    }
